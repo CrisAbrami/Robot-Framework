@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220516 01:27:44.109" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Tests\RobotFramework\Tests.robot">
+<test id="s1-t1" name="Caso de teste 01 - Clicar nos botões" line="7">
+<kw name="Abrir o navegador" library="Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220516 01:27:44.558" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220516 01:27:44.558" endtime="20220516 01:27:46.366"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:44.558" endtime="20220516 01:27:46.368"/>
+</kw>
+<kw name="Acessar the-internet.herokuapp.com" library="Resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220516 01:27:46.370" level="INFO">Opening url 'https://the-internet.herokuapp.com/challenging_dom'</msg>
+<status status="PASS" starttime="20220516 01:27:46.369" endtime="20220516 01:27:50.625"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h3[contains(.,'Challenging DOM')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220516 01:27:50.626" endtime="20220516 01:27:50.669"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:46.369" endtime="20220516 01:27:50.670"/>
+</kw>
+<kw name="Clicar no botão 1" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@class='button']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:27:50.671" level="INFO">Clicking element '//a[@class='button']'.</msg>
+<status status="PASS" starttime="20220516 01:27:50.671" endtime="20220516 01:27:51.064"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:50.670" endtime="20220516 01:27:51.065"/>
+</kw>
+<kw name="Clicar no botão 2" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@class='button alert']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:27:51.068" level="INFO">Clicking element '//a[@class='button alert']'.</msg>
+<status status="PASS" starttime="20220516 01:27:51.067" endtime="20220516 01:27:51.425"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:51.066" endtime="20220516 01:27:51.426"/>
+</kw>
+<kw name="Clicar no botão 3" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=//a[@class='button success']</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:27:51.429" level="INFO">Clicking element '//a[@class='button success']'.</msg>
+<status status="PASS" starttime="20220516 01:27:51.428" endtime="20220516 01:27:51.844"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:51.428" endtime="20220516 01:27:51.845"/>
+</kw>
+<kw name="Fechar o navegador" library="Resources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220516 01:27:51.847" endtime="20220516 01:27:54.255"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:51.846" endtime="20220516 01:27:54.256"/>
+</kw>
+<doc>Efetuar um clique em todos os 3 botões apresentados em tela</doc>
+<status status="PASS" starttime="20220516 01:27:44.556" endtime="20220516 01:27:54.257"/>
+</test>
+<test id="s1-t2" name="Caso de teste 02 - Clicar nos botões" line="15">
+<kw name="Abrir o navegador" library="Resources" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>browser=chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220516 01:27:54.273" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<status status="PASS" starttime="20220516 01:27:54.270" endtime="20220516 01:27:55.995"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:54.267" endtime="20220516 01:27:55.996"/>
+</kw>
+<kw name="Acessar the-internet.herokuapp.com" library="Resources">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=${URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220516 01:27:56.001" level="INFO">Opening url 'https://the-internet.herokuapp.com/challenging_dom'</msg>
+<status status="PASS" starttime="20220516 01:27:56.001" endtime="20220516 01:28:00.242"/>
+</kw>
+<kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
+<arg>locator=//h3[contains(.,'Challenging DOM')]</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" starttime="20220516 01:28:00.242" endtime="20220516 01:28:00.281"/>
+</kw>
+<status status="PASS" starttime="20220516 01:27:56.000" endtime="20220516 01:28:00.281"/>
+</kw>
+<kw name="Clicar no botão edit 1" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.284" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[1]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.283" endtime="20220516 01:28:00.367"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.282" endtime="20220516 01:28:00.368"/>
+</kw>
+<kw name="Clicar no botão delete 1" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.371" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[1]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.370" endtime="20220516 01:28:00.436"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.370" endtime="20220516 01:28:00.437"/>
+</kw>
+<kw name="Clicar no botão edit 2" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.441" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[2]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.441" endtime="20220516 01:28:00.520"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.440" endtime="20220516 01:28:00.520"/>
+</kw>
+<kw name="Clicar no botão delete 2" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[2]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.523" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[2]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.522" endtime="20220516 01:28:00.592"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.522" endtime="20220516 01:28:00.592"/>
+</kw>
+<kw name="Clicar no botão edit 3" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.595" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[3]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.594" endtime="20220516 01:28:00.670"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.594" endtime="20220516 01:28:00.670"/>
+</kw>
+<kw name="Clicar no botão delete 3" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[3]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.672" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[3]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.671" endtime="20220516 01:28:00.773"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.671" endtime="20220516 01:28:00.774"/>
+</kw>
+<kw name="Clicar no botão edit 4" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.776" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[4]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.776" endtime="20220516 01:28:00.853"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.775" endtime="20220516 01:28:00.854"/>
+</kw>
+<kw name="Clicar no botão delete 4" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[4]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.856" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[4]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.856" endtime="20220516 01:28:00.941"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.855" endtime="20220516 01:28:00.941"/>
+</kw>
+<kw name="Clicar no botão edit 5" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:00.945" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[5]'.</msg>
+<status status="PASS" starttime="20220516 01:28:00.944" endtime="20220516 01:28:01.028"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:00.944" endtime="20220516 01:28:01.028"/>
+</kw>
+<kw name="Clicar no botão delete 5" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[5]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.037" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[5]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.036" endtime="20220516 01:28:01.131"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.035" endtime="20220516 01:28:01.132"/>
+</kw>
+<kw name="Clicar no botão edit 6" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.139" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[6]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.139" endtime="20220516 01:28:01.213"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.138" endtime="20220516 01:28:01.214"/>
+</kw>
+<kw name="Clicar no botão delete 6" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[6]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.218" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[6]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.218" endtime="20220516 01:28:01.287"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.217" endtime="20220516 01:28:01.287"/>
+</kw>
+<kw name="Clicar no botão edit 7" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[7]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.290" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[7]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.290" endtime="20220516 01:28:01.357"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.289" endtime="20220516 01:28:01.358"/>
+</kw>
+<kw name="Clicar no botão delete 7" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[7]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.360" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[7]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.360" endtime="20220516 01:28:01.430"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.359" endtime="20220516 01:28:01.430"/>
+</kw>
+<kw name="Clicar no botão edit 8" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[8]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.436" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[8]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.435" endtime="20220516 01:28:01.504"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.434" endtime="20220516 01:28:01.504"/>
+</kw>
+<kw name="Clicar no botão delete 8" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[8]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.506" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[8]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.506" endtime="20220516 01:28:01.575"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.505" endtime="20220516 01:28:01.576"/>
+</kw>
+<kw name="Clicar no botão edit 9" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[9]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.578" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[9]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.577" endtime="20220516 01:28:01.652"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.577" endtime="20220516 01:28:01.653"/>
+</kw>
+<kw name="Clicar no botão delete 9" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[9]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.655" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[9]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.655" endtime="20220516 01:28:01.731"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.654" endtime="20220516 01:28:01.734"/>
+</kw>
+<kw name="Clicar no botão edit 10" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#edit'][contains(.,'edit')])[10]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.736" level="INFO">Clicking element '(//a[@href='#edit'][contains(.,'edit')])[10]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.736" endtime="20220516 01:28:01.811"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.735" endtime="20220516 01:28:01.811"/>
+</kw>
+<kw name="Clicar no botão delete 10" library="Resources">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>locator=(//a[@href='#delete'][contains(.,'delete')])[10]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220516 01:28:01.816" level="INFO">Clicking element '(//a[@href='#delete'][contains(.,'delete')])[10]'.</msg>
+<status status="PASS" starttime="20220516 01:28:01.814" endtime="20220516 01:28:01.904"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.812" endtime="20220516 01:28:01.905"/>
+</kw>
+<kw name="Fechar o navegador" library="Resources" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220516 01:28:01.907" endtime="20220516 01:28:04.165"/>
+</kw>
+<status status="PASS" starttime="20220516 01:28:01.906" endtime="20220516 01:28:04.166"/>
+</kw>
+<doc>Clicar em todos os botões edit e delete da grid apresentada</doc>
+<status status="PASS" starttime="20220516 01:27:54.263" endtime="20220516 01:28:04.167"/>
+</test>
+<status status="PASS" starttime="20220516 01:27:44.111" endtime="20220516 01:28:04.173"/>
+</suite>
+<statistics>
+<total>
+<stat pass="2" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="2" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
